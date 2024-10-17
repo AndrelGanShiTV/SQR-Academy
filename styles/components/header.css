@@ -1,0 +1,63 @@
+header > .main-header {
+  width: 100%;
+  max-width: 1280px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-search,
+.icon-profile,
+.icon-shopping {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  padding: 4px;
+  box-sizing: border-box;
+  transition: all 150ms;
+  color: var(--color-black);
+}
+
+.icon-search:hover,
+.icon-profile:hover,
+.icon-shopping:hover {
+  color: var(--color-primary);
+}
+
+.header-nav {
+  background-color: var(--color-lighter-gray);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding: 1rem;
+  border-top: solid 1px var(--color-darker-gray);
+  border-bottom: solid 1px var(--color-darker-gray);
+}
+
+.header-nav > .nav-item {
+  text-transform: uppercase;
+  color: var(--color-black);
+  transition: all 150ms;
+  font-family: "poppins";
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header-nav > .nav-item:hover {
+  color: var(--color-primary);
+}

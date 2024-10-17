@@ -1,0 +1,15 @@
+- [] Definir variables de los colores en css
+- [] Definir las fuentes
+- [] Definir componentes de la app
+  - [] Botones
+    - [] Boton principal - primary
+    - [] Boton ghost - primary
+    - [] Boton outlined - primary
+  - [] Tarjeta de producto
+    - Imagen
+    - Nombre
+    - Marca
+    - Precio de oferta
+    - Precio
+    - Colores
+    - Call to action
