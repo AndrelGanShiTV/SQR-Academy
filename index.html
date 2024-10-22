@@ -11,16 +11,39 @@
   <body>
     <header class="header">
       <div class="main-header">
-        <img
-          src="./assets/images/logo.svg"
-          alt="Logo Square1 Academy Store"
-          width="120"
-          height="37"
-          class="img-logo"
-        />
+        <div class="header-logo-box">
+          <button class="menu-btn">
+            <svg
+              class="header-icon icons-menu"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+
+          <a href="/index.html">
+            <img
+              src="./assets/images/logo.svg"
+              alt="Logo Square1 Academy Store"
+              width="120"
+              height="37"
+              class="img-logo"
+            />
+          </a>
+        </div>
+
         <div class="header-icons">
           <!-- Search Icon -->
-          <a href="#" class="icon-search">
+          <a href="#" class="header-icon icon-search">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -37,7 +60,7 @@
             </svg>
           </a>
           <!-- Profile Icon -->
-          <a href="#" class="icon-profile">
+          <a href="#" class="header-icon icon-profile">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -54,7 +77,7 @@
             </svg>
           </a>
           <!-- Shopping Icon -->
-          <a href="#" class="icon-shopping">
+          <a href="#" class="header-icon icon-shopping">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

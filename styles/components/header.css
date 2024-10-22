@@ -11,40 +11,43 @@ header > .main-header {
 
   padding: 2rem;
   box-sizing: border-box;
+  border-bottom: solid 1px var(--color-darker-gray);
+}
+
+.header-logo-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .header-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 0.25rem;
+  transition: all 150ms;
 }
 
-.icon-search,
-.icon-profile,
-.icon-shopping {
+.header-icon {
   display: block;
-  width: 4rem;
-  height: 4rem;
-  padding: 4px;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0.5rem;
   box-sizing: border-box;
   transition: all 150ms;
   color: var(--color-black);
 }
 
-.icon-search:hover,
-.icon-profile:hover,
-.icon-shopping:hover {
+.header-icon:hover {
   color: var(--color-primary);
 }
 
 .header-nav {
   background-color: var(--color-lighter-gray);
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
-  gap: 10rem;
-  padding: 1rem;
   border-top: solid 1px var(--color-darker-gray);
   border-bottom: solid 1px var(--color-darker-gray);
 }
@@ -55,9 +58,46 @@ header > .main-header {
   transition: all 150ms;
   font-family: "poppins";
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.75rem;
 }
 
 .header-nav > .nav-item:hover {
   color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .header-icons {
+    gap: 1rem;
+  }
+
+  .header-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .header-nav {
+    display: flex;
+    gap: 5rem;
+    padding: 0.5rem;
+  }
+
+  .header > .main-header {
+    border-bottom: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-nav {
+    gap: 10rem;
+    padding: 1rem;
+  }
+
+  .header-nav > .nav-item {
+    font-size: 2rem;
+  }
 }
