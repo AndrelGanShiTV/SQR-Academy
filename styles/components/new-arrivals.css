@@ -6,6 +6,10 @@
   gap: 2rem;
 }
 
+.new-arrivals-top {
+  width: 100%;
+}
+
 .new-arrivals-header {
   display: flex;
   flex-direction: column;
@@ -13,6 +17,8 @@
   align-items: center;
   width: 100%;
   gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .new-arrivals-header > .title {
@@ -27,11 +33,35 @@
   text-wrap: pretty;
 }
 
-.new-arrivals-filter {
-  display: flex;
+.new-arrivals-filters {
+  display: none;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.new-arrivals-filters-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.new-arrivals-filters-select > label {
+  color: var(--color-black);
+  font-size: 2rem;
+  font-family: "Poppins";
+}
+
+.new-arrivals-filters-select > select {
+  font-size: 2rem;
+  background-color: var(--color-lighter-gray);
+  color: var(--color-black);
+  border: solid 1px var(--color-darker-gray);
+  padding: 1rem 2rem;
+  font-family: "Poppins";
+  border-radius: 1rem;
 }
 
 .filter-btn {
@@ -43,6 +73,7 @@
   font-family: "Poppins";
   border-radius: 1.5rem;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .filter-btn.active {
@@ -54,4 +85,30 @@
 .filter-btn:not(.active):hover {
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.25);
   color: var(--color-black);
+}
+
+.new-arrivals-bottom {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .new-arrivals-bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .new-arrivals-filters {
+    display: flex;
+  }
+
+  .new-arrivals-filters-select {
+    display: none;
+  }
+  .new-arrivals-bottom {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

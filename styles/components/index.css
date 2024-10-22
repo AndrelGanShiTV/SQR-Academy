@@ -1,6 +1,7 @@
 @import "./header.css";
 @import "./footer.css";
 @import "./new-arrivals.css";
+@import "./product-card.css";
 
 .main {
   width: 100%;
