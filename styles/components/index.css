@@ -1,2 +1,12 @@
 @import "./header.css";
 @import "./footer.css";
+@import "./new-arrivals.css";
+
+.main {
+  width: 100%;
+  max-width: 1280px;
+  min-height: calc(100dvh - 111px);
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-inline: auto;
+}

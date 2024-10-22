@@ -1,0 +1,57 @@
+.new-arrivals {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.new-arrivals-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.new-arrivals-header > .title {
+  font-size: 5rem;
+}
+
+.new-arrivals-header > .description {
+  max-width: 614px;
+  margin-inline: auto;
+  text-align: center;
+  size: 2rem;
+  text-wrap: pretty;
+}
+
+.new-arrivals-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-btn {
+  border: none;
+  background-color: var(--color-lighter-gray);
+  color: #8a8a8a;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  font-family: "Poppins";
+  border-radius: 1.5rem;
+  transition: all 0.3s;
+}
+
+.filter-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 1px 1px 5px 0px rgba(237, 28, 36, 0.75);
+}
+
+.filter-btn:not(.active):hover {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  color: var(--color-black);
+}
