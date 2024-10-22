@@ -50,6 +50,7 @@ header > .main-header {
   justify-content: center;
   border-top: solid 1px var(--color-darker-gray);
   border-bottom: solid 1px var(--color-darker-gray);
+  transition: all 150ms;
 }
 
 .header-nav > .nav-item {
