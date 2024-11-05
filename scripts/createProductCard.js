@@ -25,7 +25,7 @@ const createProductCard = (product) => {
     </div>
     <div class="product-card_colors">
     </div>
-    <a href="/producto.html" class="product-card_buy">Comprar</a>
+    <a href="#" class="product-card_buy">Comprar</a>
   `;
   //mount component
   const productColorsBox = productCard.querySelector(".product-card_colors");
