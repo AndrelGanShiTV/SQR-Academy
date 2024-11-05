@@ -78,7 +78,7 @@
 
 .product-card_buy {
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
   box-sizing: border-box;
   font-size: 1.5rem;
   border: solid 1px var(--color-primary);
@@ -87,6 +87,9 @@
   background-color: transparent;
   transition: all 0.3s;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 .product-card_buy:hover {
