@@ -1,6 +1,6 @@
 .banner-season {
   position: relative;
-  max-height: 100vh; /* Ocupa toda la pantalla */
+  max-height: 100vh;
   background: url("../../assets/images/banner_season.png") no-repeat center
     center/cover;
   display: flex;
@@ -8,6 +8,7 @@
   justify-content: center;
   color: white;
   text-align: center;
+  padding: 10rem;
 }
 
 .banner-season .overlay {
@@ -16,7 +17,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad (0.5 es 50%) */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
