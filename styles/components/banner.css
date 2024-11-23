@@ -1,0 +1,47 @@
+.hot-sales-banner {
+  display: flex;
+  background-color: #dbd0cc;
+  min-height: calc(80dvh - 111px);
+  width: 100%;
+}
+
+.hot-sales-banner_image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 1.25rem;
+  margin-block-end: 1.5rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.hot-sales-banner_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem;
+}
+
+.hot-sales-banner_info_description {
+  font-size: 2.4rem;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+.hot-sales-banner_info_title {
+  font-size: 5rem;
+  color: #a86a3d;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.banner-season {
+  width: 100%;
+  min-height: calc(80dvh - 111px);
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-inline: auto;
+  background-color: #dbd0cc;
+}
