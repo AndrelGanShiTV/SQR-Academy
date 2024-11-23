@@ -2,13 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  padding: 1.25rem;
+  gap: 6rem;
+  padding: 4rem;
 }
 
 .brand-image {
-  width: 12rem;
-  height: auto;
+  width: 10%;
   transition: transform 0.3s ease;
 }
 
@@ -16,11 +15,39 @@
   transform: scale(1.1);
 }
 
+.brand-image:nth-child(2) {
+  transform: scale(1);
+}
+
+.brand-image:nth-child(2):hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .brands {
+    justify-content: space-between;
+    max-width: 1024px;
+    margin-inline: auto;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .brands {
     justify-content: space-between;
+    margin-inline: auto;
   }
   .brand-image {
-    width: 16rem;
+    transform: scale(1.5);
+  }
+  .brand-image:hover {
+    transform: scale(1.6);
+  }
+
+  .brand-image:nth-child(2) {
+    transform: scale(1);
+  }
+
+  .brand-image:nth-child(2):hover {
+    transform: scale(1.1);
   }
 }

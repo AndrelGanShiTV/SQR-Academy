@@ -2,13 +2,15 @@
 @import "./footer.css";
 @import "./new-arrivals.css";
 @import "./product-card.css";
-@import "./banner.css";
+@import "./hot-sales-banner.css";
+@import "./season-banner.css";
 @import "./brands.css";
+@import "./benefits.css";
 
 .main {
   width: 100%;
-  max-width: 1280px;
-  min-height: calc(100dvh - 111px);
+  /* max-width: 1280px; */
+  min-height: calc(100dvh - 200px);
   box-sizing: border-box;
   margin-inline: auto;
 }

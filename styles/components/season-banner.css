@@ -1,0 +1,88 @@
+.banner-season {
+  position: relative;
+  max-height: 100vh; /* Ocupa toda la pantalla */
+  background: url("../../assets/images/banner_season.png") no-repeat center
+    center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.banner-season .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad (0.5 es 50%) */
+  z-index: 1;
+}
+
+.banner-season_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  color: var(--color-white);
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.banner-season_info_discount {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.banner-season_info_title {
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.banner-season_info_description {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  max-width: 70%;
+  text-wrap: wrap;
+}
+
+.banner-season_btn {
+  padding: 1.75rem;
+  margin-top: 2rem;
+  box-sizing: border-box;
+  border: solid 1px var(--color-white);
+  border-radius: 1rem;
+  color: var(--color-white);
+  background-color: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.75rem;
+}
+
+.banner-season_btn {
+  width: 10%;
+  padding: 1.75rem;
+  margin: 2rem;
+  box-sizing: border-box;
+  border: solid 1px var(--color-primary);
+  border-radius: 1rem;
+  color: var(--color-white);
+  background-color: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.75rem;
+  background-color: var(--color-primary);
+}
+.banner-season_btn:hover {
+  background-color: transparent;
+  border: solid 1px var(--color-white);
+  color: var(--color-white);
+}

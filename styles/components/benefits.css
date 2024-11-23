@@ -1,0 +1,30 @@
+.benefits {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+  padding: 15rem;
+  gap: 5rem;
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.benefits-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.benefits-info-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-black);
+}

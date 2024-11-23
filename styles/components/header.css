@@ -61,6 +61,7 @@ header > .main-header {
   text-decoration: none;
   font-weight: 500;
   font-size: 1.75rem;
+  padding: 0.5rem;
 }
 
 .header-nav > .nav-item:hover {
