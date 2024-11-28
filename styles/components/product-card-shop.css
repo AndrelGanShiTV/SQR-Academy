@@ -3,6 +3,13 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.product-card-shop:hover {
+  box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
 }
 
 .product-card-shop_image {
