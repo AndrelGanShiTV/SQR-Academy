@@ -10,13 +10,101 @@
 .shop-filters {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 24%;
   padding: 1rem;
   box-sizing: border-box;
 }
 
 .shop-content {
-  width: 75%;
+  width: 76%;
   padding: 1rem;
   box-sizing: border-box;
+}
+
+.shop-content-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 0 3rem 0;
+}
+
+.shop-content-title {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Volkhov", serif;
+  color: var(--color-black);
+}
+
+.shop-sort-buttons {
+  display: flex; /* Distribuye botones en fila */
+  gap: 1rem; /* Espaciado entre botones */
+  justify-content: center; /* Centra el grupo de botones */
+  align-items: center;
+  margin: 1rem 0; /* Margen opcional */
+}
+
+.sort-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem; /* Tamaño cuadrado del botón */
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem; /* Esquinas redondeadas */
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Animación de hover */
+}
+
+.sort-button:hover {
+  color: var(--color-primary);
+}
+
+.shop-products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  max-width: 640px;
+}
+
+.shop-nav-icons {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.shop-nav-item {
+  text-align: center;
+  margin: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background: var(--color-lighter-gray);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.shop-nav-item:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+  .shop-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .shop-products {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1280px;
+  }
 }

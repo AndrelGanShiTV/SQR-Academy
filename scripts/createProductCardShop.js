@@ -1,8 +1,8 @@
-const newArrivalsContent = document.querySelector(".new-arrivals-bottom");
+const shopProducts = document.querySelector(".shop-products");
 
 const colorButton = (color) => {
   const button = document.createElement("button");
-  button.classList.add("product-color");
+  button.classList.add("product-color-shop");
   button.style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
 
   return button;
@@ -10,25 +10,25 @@ const colorButton = (color) => {
 
 const createProductCard = (product) => {
   const productCard = document.createElement("article");
-  productCard.classList.add("product-card");
+  productCard.classList.add("product-card-shop");
 
   productCard.innerHTML = `
     <img
-      class="product-card_image"
-      src="${product.image}"
+        class="product-card-shop_image"
+        src="${product.image}"
       alt="${product.title}"
     />
-    <h3 class="product-card_title">${product.title}</h3>
-    <div class="product-card_price">
-      <span class="product-card_discount-price">$${product.price}</span>
-      <span class="product-card_original-price">$${product.price}</span>
+    <h3 class="product-card-shop_title">${product.title}</h3>
+    <div class="product-card-shop_price">
+        <span class="product-card-shop_discount-price">$${product.price}</span>
     </div>
-    <div class="product-card_colors">
+    <div class="product-card-shop_colors">
     </div>
-    <a href="#" class="product-card_buy">Comprar</a>
   `;
   //mount component
-  const productColorsBox = productCard.querySelector(".product-card_colors");
+  const productColorsBox = productCard.querySelector(
+    ".product-card-shop_colors"
+  );
   const colors = [
     [255, 0, 0], // rojo
     [0, 255, 0], // verde
@@ -37,13 +37,13 @@ const createProductCard = (product) => {
   colors.forEach((color) => {
     productColorsBox.appendChild(colorButton(color));
   });
-  newArrivalsContent.appendChild(productCard);
+  shopProducts.appendChild(productCard);
 };
 
-newArrivalsContent.innerHTML = "";
+shopProducts.innerHTML = "";
 
 const getProducts = async () => {
-  return fetch("https://fakestoreapi.com/products?limit=8").then((res) =>
+  return fetch("https://fakestoreapi.com/products?limit=9").then((res) =>
     res.json()
   );
 };

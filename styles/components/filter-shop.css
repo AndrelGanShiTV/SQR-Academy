@@ -1,0 +1,120 @@
+.shop-filters > h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: "Volkhov", serif;
+  color: var(--color-black);
+  margin-block: 2rem;
+}
+
+.shop-filters h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Volkhov", serif;
+  color: var(--color-black);
+  margin-block: 1rem;
+}
+
+.shop-filters section {
+  margin-block: 1rem;
+}
+.shop-filters li {
+  list-style: none;
+}
+
+.shop-filters-size-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1rem;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-filters-size-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  border: solid 1px var(--color-dark-gray);
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Jost Variable", serif;
+  color: var(--color-dark-gray);
+  cursor: pointer;
+  max-width: 6rem;
+  transition: all 0.3s;
+}
+
+.shop-filters-size-item:hover {
+  border: solid 1px var(--color-primary);
+  color: var(--color-primary);
+}
+
+.shop-filters-colors-list {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-block: 2.5rem;
+}
+
+.shop-filters-colors-item {
+  width: 3.25rem;
+  height: 3.25rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s;
+  border: solid 1px transparent;
+}
+
+.shop-filters-colors-item:hover {
+  border: solid 1px var(--color-primary);
+}
+
+.shop-filters-prices-item {
+  font-size: 1.5rem;
+  color: var(--color-dark-gray);
+  padding-top: 1rem;
+}
+
+.shop-filters-brands-list,
+.shop-filters-collections-list,
+.shop-filters-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shop-filters-brands-item,
+.shop-filters-collections-item,
+.shop-filters-tags-item {
+  font-size: 1.5rem;
+  color: var(--color-dark-gray);
+  padding-right: 3rem;
+  padding-top: 1rem;
+  transition: all 0.3s;
+}
+
+.shop-filters-prices-item:hover {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.shop-filters-brands-item:hover {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.shop-filters-collections-item:hover {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.shop-filters-tags-item:hover {
+  color: var(--color-primary);
+  cursor: pointer;
+}
