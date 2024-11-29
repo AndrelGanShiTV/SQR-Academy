@@ -9,6 +9,7 @@
 @import "./shop-page.css";
 @import "./product-card-shop.css";
 @import "./filter-shop.css";
+@import "./product-page.css";
 
 .main {
   width: 100%;
