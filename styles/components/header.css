@@ -59,13 +59,14 @@ header > .main-header {
   transition: all 150ms;
   font-family: "poppins";
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.75rem;
   padding: 0.5rem;
 }
 
 .header-nav > .nav-item:hover {
   color: var(--color-primary);
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQR Academy Store</title>
+
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" href="https://www.square1.io/favicon.svg" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="main-header">
+        <div class="header-logo-box">
+          <button class="menu-btn">
+            <svg
+              class="header-icon icons-menu"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+
+          <a href="/cart.html">
+            <img
+              src="./assets/images/logo.svg"
+              alt="Logo Square1 Academy Store"
+              width="120"
+              height="37"
+              class="img-logo"
+            />
+          </a>
+        </div>
+
+        <div class="header-icons">
+          <!-- Search Icon -->
+          <a href="#" class="header-icon icon-search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </a>
+          <!-- Profile Icon -->
+          <a href="#" class="header-icon icon-profile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+          </a>
+          <!-- Shopping Icon -->
+          <a href="#" class="header-icon icon-shopping">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="#" class="nav-item">women</a>
+        <a href="#" class="nav-item">men</a>
+        <a href="#" class="nav-item">kids</a>
+        <a href="#" class="nav-item">accesories</a>
+        <a href="#" class="nav-item">about us</a>
+        <a href="#" class="nav-item">news</a>
+        <a href="#" class="nav-item">contact us</a>
+      </nav>
+    </header>
+    <main class="cart-main">
+      <section class="cart-header">
+        <h2 class="cart-title">Shopping Cart</h2>
+        <nav class="cart-nav">
+          <a href="#" class="cart-nav-item">Home</a>
+          <div class="cart-nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="cart-nav-item-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+          <a href="#" class="cart-nav-item">Your Shopping Cart</a>
+        </nav>
+      </section>
+
+      <section class="cart-title-label">
+        <h3 class="title-label">Product</h3>
+        <h3 class="title-label">Price</h3>
+        <h3 class="title-label">Quantity</h3>
+        <h3 class="title-label">Total</h3>
+      </section>
+
+      <hr />
+
+      <section class="cart-items">
+        <div class="cart_product">
+          <img
+            src="./assets/images/product-1.png"
+            alt="Product Image"
+            class="cart_product-image"
+          />
+          <div class="cart_product-info">
+            <h3 class="cart_product-name">Mini Dress With Ruffled Straps</h3>
+            <p class="cart_product-color">Color : Red</p>
+            <a href="" class="cart-remove-btn">Remove</a>
+          </div>
+        </div>
+        <p class="cart_product-price">$14.80</p>
+        <div class="cart_quantity-control">
+          <button class="cart_quantity-btn">-</button>
+          <input type="text" value="1" class="cart_quantity-input" />
+          <button class="cart_quantity-btn">+</button>
+        </div>
+        <p class="cart_product-total">$14.80</p>
+      </section>
+
+      <hr />
+      <div class="cart-buy-grid">
+        <div></div>
+        <section class="cart-buy">
+          <div class="cart_wrap-option">
+            <input type="checkbox" class="cart_wrap-checkbox" />
+            <span class="custom-checkbox_box"></span>
+            <label class="cart_wrap-label"
+              >For <span>$10.00</span> please wrap the product</label
+            >
+          </div>
+          <hr />
+          <div class="cart_subtotal">
+            <p class="cart_subtotal-label">Subtotal:</p>
+            <span class="cart_subtotal-amount">$100.00</span>
+          </div>
+          <button class="cart_checkout-btn">Checkout</button>
+          <a href="#" class="cart_view-cart">View Cart</a>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <a href="/cart.html">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Logo Square1 Academy Store"
+            width="120"
+            height="37"
+            class="img-logo"
+          />
+        </a>
+        <nav class="footer-nav">
+          <a href="#" class="nav-item">Support Center</a>
+          <a href="#" class="nav-item">Invoicing</a>
+          <a href="#" class="nav-item">Contract</a>
+          <a href="#" class="nav-item">Careers</a>
+          <a href="#" class="nav-item">Blog</a>
+          <a href="#" class="nav-item">FAQ's</a>
+        </nav>
+      </div>
+    </footer>
+    <!-- <script type="module" src="scripts/index.js"></script> -->
+  </body>
+</html>
