@@ -75,8 +75,7 @@
 
 .dropdown-cart_product-image {
   width: 30%;
-  height: auto;
-  aspect-ratio: 1/1;
+  height: max-content;
   border-radius: 5px;
 }
 
@@ -84,6 +83,12 @@
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 400;
+}
+
+.dropdown-cart_product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .dropdown-cart_product-color {
@@ -103,7 +108,7 @@
 
 .dropdown-cart_quantity-control {
   display: flex;
-  margin-top: 1rem;
+  margin-top: 2rem;
   background-color: var(--color-light-gray);
   box-sizing: border-box;
   align-items: center;
@@ -132,8 +137,7 @@
 
 .dropdown-cart_wrap-option {
   display: flex;
-
-  margin-top: 10rem;
+  margin-top: 20rem;
   margin-bottom: 1rem;
 }
 
@@ -164,22 +168,30 @@
 }
 
 .dropdown-cart_subtotal-label {
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+.dropdown-cart_subtotal-amount {
+  font-size: 2.5rem;
 }
 
 .dropdown-cart_checkout-btn {
+  display: block;
+  margin-top: 3rem;
   width: 100%;
   padding: 1.75rem;
   box-sizing: border-box;
   border: solid 1px var(--color-primary);
   border-radius: 1rem;
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.4);
   color: var(--color-white);
   background-color: transparent;
   transition: all 0.3s;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 300;
   background-color: var(--color-primary);
 }
 .dropdown-cart_checkout-btn:hover {
@@ -190,9 +202,9 @@
 .dropdown-cart_view-cart {
   display: block;
   text-align: center;
-  align-self: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-family: "Volkhov", serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
   color: var(--color-black);
 }

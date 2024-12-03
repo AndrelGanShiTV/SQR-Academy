@@ -57,13 +57,13 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 3rem;
   transition: all 0.3s;
 }
 
 .header-star {
   width: 5%;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .header-star:hover {
