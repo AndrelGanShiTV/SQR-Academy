@@ -29,8 +29,8 @@
 .dropdown-cart {
   position: fixed;
   top: 0;
-  right: -40%; /* Inicialmente fuera de la pantalla */
-  width: 40%;
+  right: -45%; /* Inicialmente fuera de la pantalla */
+  width: 45%;
   height: 100vh;
   background-color: #ffffff;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
@@ -207,4 +207,99 @@
   font-size: 2.5rem;
   font-weight: 500;
   color: var(--color-black);
+}
+
+/* --- Para pantallas menores a 768px --- */
+@media (max-width: 768px) {
+  .dropdown-cart_button {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 10;
+  }
+
+  .dropdown-cart_close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .dropdown-cart_title {
+    font-size: 2.5rem; /* Ajusta el tamaño del título para pantallas pequeñas */
+    text-align: center;
+  }
+
+  .dropdown-cart_info {
+    font-size: 1.6rem; /* Ajusta el tamaño del texto de la información */
+    text-align: center;
+  }
+
+  .dropdown-cart_product {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center;
+  }
+
+  .dropdown-cart_product-image {
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    max-width: 150px; /* Limita el tamaño máximo */
+  }
+
+  .dropdown-cart_product-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .dropdown-cart_product-name {
+    font-size: 1.8rem;
+  }
+
+  .dropdown-cart_product-color,
+  .dropdown-cart_product-price {
+    font-size: 1.6rem;
+  }
+
+  .dropdown-cart_quantity-control {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .dropdown-cart_quantity-btn {
+    font-size: 2rem;
+  }
+
+  .dropdown-cart_quantity-input {
+    font-size: 2rem;
+    width: 4rem;
+  }
+
+  .dropdown-cart_wrap-option {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .dropdown-cart_wrap-label {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .dropdown-cart_subtotal {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .dropdown-cart_subtotal-label,
+  .dropdown-cart_subtotal-amount {
+    font-size: 2rem;
+  }
+
+  .dropdown-cart_checkout-btn {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .dropdown-cart_view-cart {
+    font-size: 2rem;
+  }
 }
