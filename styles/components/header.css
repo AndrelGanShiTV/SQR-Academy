@@ -1,14 +1,12 @@
+/* --- Estilo general del header (sin cambios) --- */
 header > .main-header {
   width: 100%;
   max-width: 1280px;
-
   margin-left: auto;
   margin-right: auto;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   padding: 2rem;
   box-sizing: border-box;
   border-bottom: solid 1px var(--color-darker-gray);
@@ -43,14 +41,27 @@ header > .main-header {
   color: var(--color-primary);
 }
 
+/* --- Modificación de header-nav para el dropdown --- */
 .header-nav {
+  display: none; /* Oculto por defecto en pantallas pequeñas */
+}
+
+.header-nav.active {
+  display: flex;
   background-color: var(--color-lighter-gray);
   width: 100%;
-  display: none;
+  flex-direction: column; /* Para pantallas móviles, los enlaces estarán en columna */
   justify-content: center;
+  position: fixed;
+  top: -100%; /* Fuera de la pantalla por la parte superior */
+  left: 0;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  padding: 2rem;
   border-top: solid 1px var(--color-darker-gray);
   border-bottom: solid 1px var(--color-darker-gray);
-  transition: all 150ms;
+  transition: top 0.3s ease-in-out; /* Transición para mostrar el dropdown */
+  z-index: 999; /* Se asegura de que esté encima de todo */
+  top: 0; /* Se muestra desde arriba al 100% de la pantalla */
 }
 
 .header-nav > .nav-item {
@@ -61,12 +72,25 @@ header > .main-header {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.75rem;
-  padding: 0.5rem;
+  padding: 1rem 0;
 }
 
 .header-nav > .nav-item:hover {
   color: var(--color-primary);
   text-decoration: none;
+}
+
+.menu-btn {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 150ms;
+}
+
+.menu-btn .header-icon {
+  width: 3rem;
+  height: 3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -84,9 +108,12 @@ header > .main-header {
   }
 
   .header-nav {
-    display: flex;
+    display: flex !important; /* Se muestra siempre en pantallas grandes */
+    flex-direction: row;
     gap: 3.5rem;
     padding: 0.5rem;
+    position: static; /* No se fija en pantallas grandes */
+    height: auto;
   }
 
   .header > .main-header {
