@@ -12,6 +12,7 @@
 @import "./product-page.css";
 @import "./dropdown-cart.css";
 @import "./cart-page.css";
+@import "./checkout-page.css";
 
 .main {
   width: 100%;
