@@ -49,7 +49,7 @@ header > .main-header {
 .header-nav.active {
   display: flex;
   background-color: var(--color-lighter-gray);
-  width: 100%;
+  width: 80%;
   flex-direction: column; /* Para pantallas móviles, los enlaces estarán en columna */
   justify-content: center;
   align-items: center;
