@@ -58,3 +58,79 @@
   background-color: var(--color-black);
   color: var(--color-white);
 }
+
+/* --- Para pantallas menores a 768px (tabletas y móviles) --- */
+@media (max-width: 768px) {
+  .hot-sales-banner {
+    flex-direction: column; /* Apilamos la imagen y la información */
+    min-height: auto; /* Elimina la altura mínima para que se ajuste automáticamente */
+    padding: 2rem 1rem; /* Añade un poco de padding interno */
+  }
+
+  .hot-sales-banner_image {
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    height: auto;
+    margin-top: 2rem; /* Reduce los márgenes superiores e inferiores */
+    margin-bottom: 2rem;
+  }
+
+  .hot-sales-banner_info {
+    padding: 1rem; /* Reduce el padding general */
+    align-items: center; /* Centra el contenido */
+    text-align: center; /* Alinea el texto al centro */
+  }
+
+  .hot-sales-banner_info_description {
+    font-size: 2rem; /* Se reduce el tamaño de la fuente */
+  }
+
+  .hot-sales-banner_info_title {
+    font-size: 3.5rem; /* Reduce el tamaño del título */
+  }
+
+  .hot-sales-banner_btn {
+    width: 100%; /* El botón ocupa el ancho completo */
+    font-size: 1.5rem; /* Reduce ligeramente el tamaño de la fuente */
+    padding: 1.25rem; /* Ajuste en el padding para evitar que se vea demasiado grande */
+    margin-top: 1.5rem; /* Reduce la separación superior */
+  }
+}
+
+/* --- Para pantallas menores a 1024px (tabletas horizontales) --- */
+@media (max-width: 1024px) {
+  .hot-sales-banner {
+    flex-direction: row; /* Mantiene la disposición en dos columnas */
+    justify-content: center;
+    min-height: calc(60vh - 80px); /* Ajusta la altura mínima */
+    padding: 2rem 1rem; /* Añade padding interno */
+  }
+
+  .hot-sales-banner_image {
+    width: 45%; /* La imagen ocupa el 45% del ancho disponible */
+    height: auto;
+    margin-top: 4rem; /* Reduce los márgenes superiores e inferiores */
+    margin-bottom: 4rem;
+  }
+
+  .hot-sales-banner_info {
+    padding: 2rem; /* Ajuste del padding */
+    justify-content: center; /* Centra verticalmente la información */
+    align-items: flex-start; /* Alinea la información a la izquierda */
+    text-align: left; /* Alineación del texto a la izquierda */
+  }
+
+  .hot-sales-banner_info_description {
+    font-size: 2.2rem; /* Ajuste en el tamaño del texto */
+  }
+
+  .hot-sales-banner_info_title {
+    font-size: 4rem; /* Reduce ligeramente el tamaño del título */
+  }
+
+  .hot-sales-banner_btn {
+    width: 50%; /* El botón ocupa el 50% del ancho disponible */
+    font-size: 1.75rem;
+    padding: 1.5rem; /* Se reduce el padding */
+    margin-top: 1.5rem;
+  }
+}

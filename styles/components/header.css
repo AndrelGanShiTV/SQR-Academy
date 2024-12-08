@@ -52,6 +52,7 @@ header > .main-header {
   width: 100%;
   flex-direction: column; /* Para pantallas móviles, los enlaces estarán en columna */
   justify-content: center;
+  align-items: center;
   position: fixed;
   top: -100%; /* Fuera de la pantalla por la parte superior */
   left: 0;
@@ -93,6 +94,21 @@ header > .main-header {
   height: 3rem;
 }
 
+.header-close-nav {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  transition: all 0.3s;
+}
+
+.header-close-nav:hover {
+  color: var(--color-primary);
+}
+
 @media screen and (min-width: 768px) {
   .menu-btn {
     display: none;
@@ -110,14 +126,22 @@ header > .main-header {
   .header-nav {
     display: flex !important; /* Se muestra siempre en pantallas grandes */
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 3.5rem;
     padding: 0.5rem;
     position: static; /* No se fija en pantallas grandes */
     height: auto;
+    border-bottom: solid 1px var(--color-darker-gray);
+    border-top: solid 1px var(--color-darker-gray);
   }
 
   .header > .main-header {
     border-bottom: none;
+  }
+
+  .header-close-nav {
+    display: none;
   }
 }
 

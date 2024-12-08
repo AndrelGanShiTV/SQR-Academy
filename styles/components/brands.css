@@ -23,31 +23,36 @@
   transform: scale(1.1);
 }
 
-@media screen and (min-width: 768px) {
+/* --- Para pantallas menores a 768px (tabletas y móviles) --- */
+@media (max-width: 768px) {
   .brands {
-    justify-content: space-between;
-    max-width: 1024px;
-    margin-inline: auto;
+    flex-wrap: wrap; /* Asegura que las marcas se envuelvan correctamente */
+    gap: 3rem; /* Reduce el espacio entre los logos */
+    padding: 2rem; /* Reduce el padding para evitar desbordamiento horizontal */
+  }
+
+  .brand-image {
+    width: 25%; /* Cada imagen ocupa el 25% del ancho disponible */
+  }
+
+  .brand-image:hover {
+    transform: scale(1.05); /* Menor escala en móviles */
   }
 }
 
-@media screen and (min-width: 1024px) {
+/* --- Para pantallas menores a 1024px (tabletas horizontales) --- */
+@media (max-width: 1024px) {
   .brands {
-    justify-content: space-between;
-    margin-inline: auto;
+    flex-wrap: wrap; /* Las marcas se adaptan al espacio */
+    gap: 4rem; /* Reduce un poco la separación entre las marcas */
+    padding: 3rem; /* Ajusta el padding para dar más espacio */
   }
+
   .brand-image {
-    transform: scale(1.5);
+    width: 15%; /* Cada imagen ocupa el 15% del ancho disponible */
   }
+
   .brand-image:hover {
-    transform: scale(1.6);
-  }
-
-  .brand-image:nth-child(2) {
-    transform: scale(1);
-  }
-
-  .brand-image:nth-child(2):hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Mantiene el efecto de escala */
   }
 }
