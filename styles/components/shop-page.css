@@ -1,71 +1,81 @@
+/* --- Diseño base para pantallas móviles (por defecto) --- */
 .shop-main {
   display: flex;
+  flex-direction: column; /* Apilamos los elementos de forma vertical */
   width: 100%;
   max-width: 1280px;
   min-height: calc(100dvh - 200px);
   box-sizing: border-box;
-  margin-inline: auto;
 }
 
 .shop-filters {
   display: flex;
   flex-direction: column;
-  width: 24%;
+  width: 100%; /* Ocupa el 100% del ancho en móviles */
   padding: 1rem;
   box-sizing: border-box;
+  margin-inline: auto;
 }
 
 .shop-content {
-  width: 76%;
+  width: 100%; /* Ocupa el 100% del ancho en móviles */
   padding: 1rem;
   box-sizing: border-box;
 }
 
 .shop-content-header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 3rem 0 3rem 0;
+  flex-direction: column; /* Apilamos el título y los botones */
+  justify-content: center;
+  padding: 3rem 0;
 }
 
 .shop-content-title {
-  font-size: 3rem;
+  font-size: 2.5rem; /* Tamaño adecuado para móviles */
   font-weight: 400;
   font-family: "Volkhov", serif;
+  text-align: center;
   color: var(--color-black);
 }
 
 .shop-sort-buttons {
-  display: flex; /* Distribuye botones en fila */
-  gap: 1rem; /* Espaciado entre botones */
-  justify-content: center; /* Centra el grupo de botones */
-  align-items: center;
-  margin: 1rem 0; /* Margen opcional */
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0;
 }
 
 .sort-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3rem; /* Tamaño cuadrado del botón */
+  width: 3rem;
   height: 3rem;
   border: none;
-  border-radius: 0.5rem; /* Esquinas redondeadas */
+  border-radius: 0.5rem;
   background-color: transparent;
   cursor: pointer;
-  transition: all 0.3s ease; /* Animación de hover */
+  transition: all 0.3s ease;
 }
 
 .sort-button:hover {
   color: var(--color-primary);
 }
 
+.sort-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 .shop-products {
-  width: 100%;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr; /* Una sola columna para móviles */
   gap: 2rem;
-  max-width: 640px;
+  width: 100%;
 }
 
 .shop-nav-icons {
@@ -75,20 +85,17 @@
 }
 
 .shop-nav-item {
-  text-align: center;
-  margin: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 5rem;
-  width: 5rem;
+  width: 4rem; /* Ajustamos el tamaño de los iconos para móviles */
+  height: 4rem;
   border-radius: 50%;
   background: var(--color-lighter-gray);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  text-decoration: none;
   color: var(--color-black);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .shop-nav-item:hover {
@@ -97,14 +104,76 @@
 }
 
 @media screen and (min-width: 768px) {
+  .shop-main {
+    flex-direction: row; /* Cambiamos a disposición en fila */
+    gap: 2rem;
+  }
+
+  .shop-filters {
+    width: 30%; /* Ancho más pequeño para los filtros */
+    padding: 2rem;
+  }
+
+  .shop-content {
+    width: 70%; /* El contenido ocupa el resto del espacio */
+  }
+
+  .shop-content-header {
+    flex-direction: row; /* Los elementos se distribuyen horizontalmente */
+    justify-content: space-between;
+  }
+
+  .shop-content-title {
+    font-size: 3rem; /* Ajuste en el tamaño del título */
+  }
+
+  .shop-sort-buttons {
+    gap: 1.5rem; /* Mayor espacio entre los botones */
+  }
+
   .shop-products {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de productos */
+  }
+
+  .shop-nav-item {
+    width: 5rem; /* Los iconos de navegación se amplían un poco */
+    height: 5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .shop-main {
+    padding: 3rem;
+  }
+
+  .shop-filters {
+    width: 25%; /* Filtros más pequeños */
+    padding: 2rem;
+  }
+
+  .shop-content {
+    width: 75%; /* Contenido ocupa más espacio */
+  }
+
+  .shop-content-header {
+    flex-direction: row; /* Mantiene la disposición en fila */
+    justify-content: space-between;
+  }
+
+  .shop-content-title {
+    font-size: 3.5rem; /* Tamaño de fuente más grande */
+  }
+
+  .shop-sort-buttons {
+    gap: 2rem; /* Aumenta el espacio entre botones */
+  }
+
   .shop-products {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 1280px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de productos */
+  }
+
+  .shop-nav-item {
+    width: 6rem; /* Los iconos de navegación se amplían más */
+    height: 6rem;
   }
 }
