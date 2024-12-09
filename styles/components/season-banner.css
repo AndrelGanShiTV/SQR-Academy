@@ -67,7 +67,7 @@
 }
 
 .banner-season_btn {
-  width: 10%;
+  width: 15%;
   padding: 1.75rem;
   margin: 2rem;
   box-sizing: border-box;
@@ -86,4 +86,72 @@
   background-color: transparent;
   border: solid 1px var(--color-white);
   color: var(--color-white);
+}
+
+/* --- Para pantallas menores a 768px (tabletas y móviles) --- */
+@media (max-width: 768px) {
+  .banner-season {
+    padding: 5rem 2rem; /* Reduce el padding general */
+    max-height: auto; /* La altura se adapta al contenido */
+    background-size: cover; /* Asegura que la imagen de fondo se ajuste al tamaño */
+  }
+
+  .banner-season_info {
+    padding: 2rem; /* Reduce el padding interno */
+    align-items: center; /* Centra la información */
+    text-align: center; /* Centra el texto */
+  }
+
+  .banner-season_info_discount {
+    font-size: 2.5rem; /* Reduce el tamaño de la fuente */
+  }
+
+  .banner-season_info_title {
+    font-size: 4rem; /* Reduce el tamaño de la fuente */
+  }
+
+  .banner-season_info_description {
+    font-size: 1.8rem; /* Reduce el tamaño de la fuente */
+    max-width: 90%; /* Asegura que el texto no sea muy ancho */
+  }
+
+  .banner-season_btn {
+    width: 100%; /* El botón ocupa el ancho completo */
+    font-size: 1.6rem; /* Reduce el tamaño de la fuente */
+    padding: 1.5rem; /* Ajuste del padding */
+  }
+}
+
+/* --- Para pantallas menores a 1024px (tabletas horizontales) --- */
+@media (max-width: 1024px) {
+  .banner-season {
+    padding: 7rem 3rem; /* Reduce el padding general */
+    max-height: auto; /* Se adapta al contenido */
+    background-size: cover; /* La imagen de fondo se adapta al tamaño */
+  }
+
+  .banner-season_info {
+    padding: 3rem; /* Se reduce un poco el padding */
+    align-items: center; /* Centra la información */
+    text-align: center; /* Centra el texto */
+  }
+
+  .banner-season_info_discount {
+    font-size: 2.8rem; /* Se reduce el tamaño de la fuente */
+  }
+
+  .banner-season_info_title {
+    font-size: 5rem; /* Se reduce el tamaño de la fuente */
+  }
+
+  .banner-season_info_description {
+    font-size: 2rem; /* Se reduce el tamaño de la fuente */
+    max-width: 80%; /* Asegura que el texto no sea demasiado ancho */
+  }
+
+  .banner-season_btn {
+    width: 30%; /* El botón ocupa el ancho completo */
+    font-size: 1.75rem; /* Se mantiene el tamaño de la fuente */
+    padding: 1rem; /* Se ajusta el padding */
+  }
 }

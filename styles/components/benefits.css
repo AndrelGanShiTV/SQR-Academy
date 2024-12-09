@@ -1,30 +1,73 @@
+/* --- Diseño base para pantallas móviles (por defecto) --- */
 .benefits {
   width: 100%;
-  max-width: 1280px;
   display: flex;
-  justify-content: space-between;
-  margin-inline: auto;
-  padding: 15rem;
-  gap: 5rem;
+  flex-direction: column; /* Apilamos los elementos verticalmente */
+  gap: 2rem; /* Espacio entre los elementos */
+  padding: 4rem 2rem; /* Padding adecuado para pantallas pequeñas */
 }
 
 .benefits-item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column; /* Los elementos se apilan uno sobre otro */
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem; /* Menor espacio entre los elementos */
 }
 
 .benefits-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center; /* Se centra para móviles */
 }
 
 .benefits-info-title {
-  font-size: 2rem;
+  font-size: 1.8rem; /* Fuente más pequeña para móviles */
   font-weight: 500;
   color: var(--color-black);
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    flex-direction: row; /* Cambia de columna a fila */
+    justify-content: space-between; /* Distribuye los elementos a lo largo de la fila */
+    padding: 8rem; /* Ajuste de padding para pantallas medianas */
+    gap: 3rem; /* Separa los elementos entre sí */
+  }
+
+  .benefits-item {
+    flex-direction: row; /* Cambia a disposición horizontal */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Espacio entre los elementos de la fila */
+  }
+
+  .benefits-info {
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+  }
+
+  .benefits-info-title {
+    font-size: 2rem; /* Aumenta ligeramente el tamaño de la fuente */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .benefits {
+    max-width: 1280px; /* Se aplica el ancho máximo definido en el diseño original */
+    padding: 15rem; /* Se utiliza el padding original */
+    gap: 5rem; /* Se mantiene el gap original */
+    margin-inline: auto; /* Centra el contenedor */
+  }
+
+  .benefits-item {
+    flex-direction: row; /* Mantiene la disposición en fila */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Se mantiene el gap original */
+  }
+
+  .benefits-info-title {
+    font-size: 2.4rem; /* Aumenta el tamaño de la fuente */
+  }
 }

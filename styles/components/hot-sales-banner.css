@@ -62,13 +62,15 @@
 /* --- Para pantallas menores a 768px (tabletas y móviles) --- */
 @media (max-width: 768px) {
   .hot-sales-banner {
+    display: flex;
+    align-items: center;
     flex-direction: column; /* Apilamos la imagen y la información */
     min-height: auto; /* Elimina la altura mínima para que se ajuste automáticamente */
     padding: 2rem 1rem; /* Añade un poco de padding interno */
   }
 
   .hot-sales-banner_image {
-    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    width: 70%; /* La imagen ocupa todo el ancho disponible */
     height: auto;
     margin-top: 2rem; /* Reduce los márgenes superiores e inferiores */
     margin-bottom: 2rem;
@@ -98,25 +100,11 @@
 
 /* --- Para pantallas menores a 1024px (tabletas horizontales) --- */
 @media (max-width: 1024px) {
-  .hot-sales-banner {
-    flex-direction: row; /* Mantiene la disposición en dos columnas */
-    justify-content: center;
-    min-height: calc(60vh - 80px); /* Ajusta la altura mínima */
-    padding: 2rem 1rem; /* Añade padding interno */
-  }
-
-  .hot-sales-banner_image {
-    width: 45%; /* La imagen ocupa el 45% del ancho disponible */
-    height: auto;
-    margin-top: 4rem; /* Reduce los márgenes superiores e inferiores */
-    margin-bottom: 4rem;
-  }
-
   .hot-sales-banner_info {
     padding: 2rem; /* Ajuste del padding */
     justify-content: center; /* Centra verticalmente la información */
-    align-items: flex-start; /* Alinea la información a la izquierda */
-    text-align: left; /* Alineación del texto a la izquierda */
+    align-items: center; /* Alinea la información a la izquierda */
+    text-align: center; /* Alineación del texto a la izquierda */
   }
 
   .hot-sales-banner_info_description {
